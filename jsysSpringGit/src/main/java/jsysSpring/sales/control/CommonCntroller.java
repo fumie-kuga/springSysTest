@@ -10,6 +10,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.bind.support.SessionStatus;
 
 import jsysSpring.sales.entity.AuthEmployee;
@@ -22,6 +23,7 @@ import jsysSpring.sales.entity.AuthEmployee;
  * @version 1.0.0 2022/03/20
  */
 @Controller
+@SessionAttributes("authEmployee")		//2022/05/05追記
 public class CommonCntroller {
 
 	/** 認証済み従業員情報 */
